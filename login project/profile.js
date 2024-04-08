@@ -1,6 +1,6 @@
 
   if(sessionStorage.getItem("user")==null){
-    window.location.replace("login.html");
+    window.location.replace("index.html");
   }
   else{
    // logout coding
@@ -9,7 +9,7 @@
     sessionStorage.clear();
     var logout_text = document.getElementById("logout_text");
     logout_text.innerHTML ="plz wait...";
-    setTimeout(function(){window.location="login.html"},2000);
+    setTimeout(function(){window.location="index.html"},2000);
   }
   
    // logout end
